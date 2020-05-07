@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>BnB Pricing Predictor</title>
+        <link rel="stylesheet" media="screen" href="/static/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-3">Price Predictor</h1>
+                <p>
+                    <form action="/get_results" method="post">
+                        <!-- <p>Name/Short Description</p>
+                        <input type="text" name="name" value="luxury suites overlooking the space needle"> -->
+                        <!-- <p>Choose Property Type: Entire home/apt, Private room, Shared room or Hotel room</p>
+                        <input type="text" name="property_type" value="Entire home/apt"> -->
+                        <!-- <p>Choose Room Type: Entire home/apt, Private room, Shared room or Hotel room</p>
+                        <input type="text" name="room_type: Entire home/apt" value="1">
+                        <input type="text" name="room_type: Private room" value="0">
+                        <input type="text" name="room_type: Shared room" value="0">
+                        <input type="text" name="room_type: Hotel Room" value="0"> -->
+                        <!-- <p>Neighborhood</p>
+                        <input type="text" name="neighbourhood_group: Downtown" value="1  "> -->
+                        <p>Superhost</p>
+                        <select class="form-control" id="rating" name="host_is_superhost">
+                            <option value="1">Yes</option>
+                            <option value="0" selected>No</option>
+                        </select>
+                        <br>
+                        <!-- <p>Latitude</p>
+                        <input type="text" name="latitude" value="-122.320620">
+                        <br><br>
+                        <p>Longitude</p>
+                        <input type="text" name="longitude" value="47.624214">
+                        <br><br> -->
+                        <p>Address</p>
+                        <input type="text" name="address" value="1512 taylor ave n seattle wa">
+                        <br><br>
+                        <p>Accommodates</p>
+                        <input type="text" name="accommodates" value="5">
+                        <br><br>
+                        <p>Bathrooms</p>
+                        <input type="text" name="bathrooms" value="2">
+                        <br><br>
+                        <p>Bedrooms</p>
+                        <input type="text" name="bedrooms" value="3">
+                        <br><br>
+                        <p>Beds</p>
+                        <input type="text" name="beds" value="4">
+                        <br><br>
+                        <p>Cleaning Fee</p>
+                        <input type="text" name="cleaning_fee" value="150">
+                        <br><br>
+                        <!-- <p>Minimum Nights</p>
+                        <input type="text" name="minimum_nights" value="3"> -->
+                        <p>Number of Reviews</p>
+                        <input type="text" name="number_of_reviews" value="0">
+                        <br><br>
+                        <p>Neighborhood Group</p>
+                        <select class="form-control" id="rating" name="neighbourhood_group_cleansed">
+                            <option value="Ballard">Ballard</option>
+                            <option value="Beacon Hill">Beacon Hill</option>
+                            <option value="Capitol Hill">Capitol Hill</option>
+                            <option value="Cascade">Cascade</option>
+                            <option value="Central Area">Central Area</option>
+                            <option value="Delridge">Delridge</option>
+                            <option value="Downtown">Downtown</option>
+                            <option value="Interbay">Interbay</option>
+                            <option value="Lake City">Lake City</option>
+                            <option value="Magnolia">Magnolia</option>
+                            <option value="Northgate">Northgate</option>
+                            <option value="Other neighborhoods">Other neighborhoods</option>
+                            <option value="Queen Anne" selected>Queen Anne</option>
+                            <option value="Rainier Valley">Rainier Valley</option>
+                            <option value="Seward Park">Seward Park</option>
+                            <option value="University District">University District</option>
+                            <option value="West Seattle">West Seattle</option>
+                        </select>
+                        <br>
+                        <input type="submit" class="btn btn-primary btn-lg" value="Predict!">
+                    </form>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
+            
+
