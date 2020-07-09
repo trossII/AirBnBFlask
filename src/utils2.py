@@ -25,7 +25,8 @@ def final_data(data,data_ng,data_geo):
     # (data,data_ng,data_n,data_rt,data_nlp,data_minimum)
 
     EXPECTED_FEATURES=['host_is_superhost', 'accommodates',
-       'bathrooms', 'bedrooms', 'beds', 'cleaning_fee', 'number_of_reviews'
+       'bathrooms', 'bedrooms', 'beds', 'cleaning_fee'
+    #    , 'number_of_reviews'
     #    ,
     #    'neighbourhood_group: Ballard', 'neighbourhood_group: Beacon Hill',
     #    'neighbourhood_group: Capitol Hill', 'neighbourhood_group: Cascade',
@@ -44,6 +45,7 @@ def final_data(data,data_ng,data_geo):
     errors =[]
     for feature in EXPECTED_FEATURES:
         test_value.append(float(data[feature]))
+    test_value.append(5.0)
     for n in data_ng:
         for n in n:
             test_value.append(float(n))
